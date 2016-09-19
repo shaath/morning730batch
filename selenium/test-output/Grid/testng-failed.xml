@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Grid]" parallel="tests">
+  <parameter name="browser" value="chrome"/>
+  <test name="on chrome(failed)" parallel="tests">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="Grid.grideg1">
+        <methods>
+          <include name="grid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Grid.grideg1 -->
+    </classes>
+  </test> <!-- on chrome(failed) -->
+  <test name="on Firefox(failed)" parallel="tests">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Grid.grideg1">
+        <methods>
+          <include name="grid" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- Grid.grideg1 -->
+    </classes>
+  </test> <!-- on Firefox(failed) -->
+</suite> <!-- Failed suite [Grid] -->
